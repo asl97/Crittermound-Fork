@@ -648,8 +648,9 @@
                             <button onclick="Reset()">reset game / delete save</button>
                             <br /><br />
                             <button data-bind="click: $root.Save.bind($root), clickBubble: false">save game</button> |
-                            <button onclick="Export()">export game</button>
-                            <button onclick="ShowImport()">import game</button>
+                            <button onclick="Export()">export save</button>
+                            <button onclick="ExportAs()">download save</button>
+                            <button onclick="ShowImport()">import save</button>
                             <br /><br />
                             <b>Battle Speed:</b> <span data-bind="text: battleTurnLength() / 20"></span> seconds<br />
                             <input style="width: 100%" type="range" min="2" max="60" data-bind="value: battleTurnLength">
@@ -658,6 +659,7 @@
                             <p>
                                 <strong>dev summary - xx, xx, 2018</strong><br />
                                 <ul>
+                                    <li>Added download save button</li>
                                     <li>Fixed spelling errors and typo</li>
                                 </ul>
                                 <strong>1.1.4 - Sep 9th, 2014</strong><br />
